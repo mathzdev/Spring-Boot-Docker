@@ -28,8 +28,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     private ApiInfo metaData() {
         return new ApiInfoBuilder()
                 .title("Spring Boot Docker")
-                .description("Aplicação para controlar Usuários e Agências Bancárias Utilizando Spring Boot (Java), Swagger e MongoDB.\n" +
-                        "Criar uma imagem de sistema para docker.")
+                .description("Imagem docker e código fonte de uma aplicação Spring Boot (Java) que gerencia Usuários e Agências Bancárias. Utilizando Spring Boot (Java), Swagger e MongoDB.")
                 .version("1.0.0")
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")

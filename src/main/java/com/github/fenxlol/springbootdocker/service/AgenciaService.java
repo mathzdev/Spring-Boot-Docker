@@ -4,6 +4,7 @@ import com.github.fenxlol.springbootdocker.domain.Agencia;
 import com.github.fenxlol.springbootdocker.repository.AgenciaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,6 +15,7 @@ public class AgenciaService {
     @Autowired
     AgenciaRepository agenciaRepository;
 
+    @Transactional(readOnly = true)
     public List<Agencia> listar() {
         return agenciaRepository.findAll();
     }
